@@ -41,7 +41,7 @@ void loop() {
    float temperature = dht.readTemperature();
   // Prepare sample sensor data
  
-  vector<double> sensorValues = {humidity,temperature};;  // Sensor data vector
+  double sensorValues = {humidity,temperature};;  // Sensor data vector
   const char* sensorInfo[] = {"Temperature","Humidity"}; // Sensor info array
 
   board.sendData(sensorValues, sensorInfo, LOW_PRE);  // Send over REST with low precision
