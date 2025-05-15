@@ -1,5 +1,4 @@
 int sensor_pin = A0;
-#include<DHT.h>
 #include <ConsentiumThings.h>
 ConsentiumThingsDalton board;
 const char *ssid = "YOUR_WIFI_SSID";      
